@@ -1,0 +1,11 @@
+{
+  "author": "MSA_i",
+  "name": "com.msa-i.efficiency-tools-for-cluster",
+  "version": "0.0.1",
+  "displayName": "Efficiency-Tools-for-cluster by MSA_i",
+  "unity": "2019.4",
+  "type": "tool",
+  "dependencies": {
+    "mu.cluster.cluster-creator-kit": ""
+  }
+}

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label text="WebTrigger Json Generater" style="font-size: 17px; -unity-font-style: bold;" />
+    <ui:VisualElement style="top: 12px;">
+        <ui:Toggle label="Show ConfirmDialog" tooltip="確認ダイアログを表示するかどうか" name="ShowConfirmDialog" />
+        <ui:VisualElement style="flex-direction: row; left: 2px;">
+            <ui:Label text="Copy DisplayName from" tooltip="既存のJsonからDisplayNameをコピーできます" />
+            <ui:Button text="Read Json" tooltip="既存のJsonからDisplayNameをコピーできます" name="ReadJson" style="left: 5px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: flex-end; top: 10px;">
+            <ui:Button text="Generate Json" name="GenerateJson" tooltip="Assets/TriggerJson以下にJsonを生成します" style="height: 35px; width: 120px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
