@@ -192,9 +192,15 @@ namespace MSAi.Editor.JsonGenerator
 
         void GenerateJson()
         {
-            var dataPath = $"Assets/TriggerJson/{SceneManager.GetActiveScene().name}.json";
+            var dir = $"Assets/TriggerJson/";
+            var dataPath = $"{dir}{SceneManager.GetActiveScene().name}.json";
             var jsondata = GenerateJsonData();
             var jsonstr = JsonUtility.ToJson(jsondata, true);
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+            
             var writer = new StreamWriter(dataPath, false);
             writer.WriteLine(jsonstr);
             writer.Flush();
