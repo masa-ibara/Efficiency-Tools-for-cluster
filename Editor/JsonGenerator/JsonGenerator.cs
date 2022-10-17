@@ -216,10 +216,8 @@ namespace MSAi.Editor.JsonGenerator
             var toolMenu = Resources.Load<VisualTreeAsset>("JsonGeneratorWindow");
             toolMenu.CloneTree(root);
 
-            var toggles = root.Query<Toggle>();
             showConfirmDialogToggle = root.Q<Toggle>("ShowConfirmDialog");
 
-            var buttons = root.Query<Button>();
             root.Q<Button>("ReadJson").clickable.clicked += () =>
                 GetJsonPath();
 
